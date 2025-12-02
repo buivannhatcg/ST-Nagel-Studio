@@ -1749,12 +1749,12 @@ body.navbar-scrolled {
 
 .image-slider-container::before {
     left: 0;
-    background: linear-gradient(to right, #f8f9fa, transparent);
+    background: linear-gradient(to right, transparent);
 }
 
 .image-slider-container::after {
     right: 0;
-    background: linear-gradient(to left, #f8f9fa, transparent);
+    background: linear-gradient(to left, transparent);
 }
 
 .image-slider-track {
