@@ -509,7 +509,7 @@ body.navbar-scrolled {
 .scroll-gallery {
     position: absolute;
     margin-top: 1.5rem;
-    /* 👈 gần button hơn */
+    /*  gần button hơn */
     overflow: hidden;
     width: 100%;
 }
@@ -550,7 +550,7 @@ body.navbar-scrolled {
     }
 }
 
-/* 💫 Hiệu ứng đảo chiều / tốc độ chậm dần */
+/*  Hiệu ứng đảo chiều / tốc độ chậm dần */
 .scroll-gallery.slow .scroll-track {
     animation-duration: 50s;
 }
@@ -569,7 +569,7 @@ body.navbar-scrolled {
 .section-title {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 4rem;
+    padding: 2rem 0px;
     color: #333;
     opacity: 0;
     transform: translateY(30px);
@@ -1731,9 +1731,6 @@ body.navbar-scrolled {
 .image-slider-container {
     width: 100%;
     overflow: hidden;
-    padding: 40px 0;
-    /* background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%); */
-    /* position: relative; */
 }
 
 .image-slider-container::before,
@@ -1816,7 +1813,7 @@ body.navbar-scrolled {
 }
 /* ==================== VIDEO SECTION ==================== */
 .video-section {
-    padding: 80px 20px;
+    padding: 2rem 20px;
     background: azure;
 }
 
@@ -1851,7 +1848,7 @@ body.navbar-scrolled {
 /* Responsive */
 @media (max-width: 768px) {
     .video-section {
-        padding: 60px 15px;
+        padding: 1rem 15px;
     }
     
     .section-subtitle {
@@ -1860,5 +1857,103 @@ body.navbar-scrolled {
     
     .video-wrapper iframe {
         height: 300px;
+    }
+}
+/* ==================== WIMPERNVERLÄNGERUNG SECTION ==================== */
+.wimpern-section {
+    padding: 0px 20px;
+    background: azure;
+}
+
+.wimpern-section .section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.wimpern-section .image-slider-container {
+    margin-bottom: 60px;
+}
+
+.wimper-price-table-wrapper {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(217, 117, 71, 0.15);
+}
+
+.wimper-price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.wimper-price-table thead {
+    background: var(--gradient-accent);
+    color: white;
+}
+
+.wimper-price-table th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 13px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.wimper-price-table th:last-child {
+    border-right: none;
+}
+
+.wimper-price-table th .natur-look,
+.wimper-price-table th .style-type {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    opacity: 0.95;
+}
+
+.wimper-price-table td {
+    padding: 18px 15px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+}
+
+.wimper-price-table td.row-label {
+    text-align: left;
+    font-weight: 600;
+    color: #d97547;
+    background: #fafafa;
+}
+
+.wimper-price-table tbody tr:hover {
+    background: #fff9f7;
+}
+
+.wimper-price-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wimpern-section {
+        padding: 0px 15px;
+    }
+    
+    .wimpern-section .section-subtitle {
+        font-size: 16px;
+    }
+    
+    .wimper-price-table th,
+    .wimper-price-table td {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+    
+    .wimper-price-table th .price {
+        font-size: 14px;
     }
 }
